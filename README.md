@@ -102,3 +102,93 @@ int main() {
     return 0;
 }
 
+#include <string>
+// Подключаем библиотеку для работы со строками std::string
+
+void getHelp(){
+// Объявляем функцию getHelp, которая не принимает параметров и ничего не возвращает (void)
+
+    std::cout << "Здесь будет помощь." << "\n";
+    // std::cout — вывод в консоль; 
+    // << — оператор вставки данных в поток вывода;
+    // "\n" — символ перехода на новую строку (как нажатие Enter)
+    
+}
+// Конец функции getHelp
+
+int main(int argc, char* argv[]){
+// Точка входа в программу. 
+// int argc — количество аргументов командной строки (argument count)
+// char* argv[] — массив строк с самими аргументами (argument vector)
+
+    setlocale(LC_ALL, "");
+    // Функция из <clocale>: настраивает локаль для корректного отображения 
+    // кириллицы и региональных форматов (даты, чисел и т.д.)
+   
+    bool needHelp = false;
+    // Объявляем логическую переменную (true/false), флаг: нужна ли помощь
+    // Изначально — false (помощь не нужна)
+
+    std::string helpString;
+    // Создаём переменную helpString типа std::string (строка)
+    
+    helpString = "--help";
+    // Присваиваем переменной значение "--help" — это флаг, который ищем
+
+    for (int i = 0; i < argc; i++){
+    // Цикл for: 
+    // int i = 0 — начинаем с нуля;
+    // i < argc — продолжаем, пока i меньше количества аргументов;
+    // i++ — увеличиваем i на 1 после каждой итерации
+
+        std::cout << "argv [" << i << "] = " << argv[i] << "\n";
+        // Выводим номер аргумента (i) и его значение (argv[i]) в консоль
+       
+        if (helpString == argv[i]){
+        // Сравниваем: если текущий аргумент равен "--help"
+        
+           needHelp = true;
+           // Если совпало — устанавливаем флаг needHelp в true (помощь нужна)
+           
+        };  // Конец условия if
+    } // Конец цикла for
+
+    if(needHelp){
+    // Проверяем флаг: если needHelp == true (пользователь запросил помощь)
+    
+        getHelp();
+        // Вызываем функцию getHelp(), чтобы показать справку
+        
+    }; // Конец условия if
+
+    return 0;
+    // Завершаем программу и возвращаем код 0 — означает "успешное выполнение"
+}
+#include <iostream>
+#include <string>
+#include <clocale>
+
+void getHelp() {
+    std::cout << "Здесь будет помощь." << "\n";
+}
+
+int main(int argc, char* argv[]) {
+    setlocale(LC_ALL, "");
+
+    bool needHelp = false;
+    std::string helpString = "--help";
+
+    for (int i = 0; i < argc; i++) {
+        std::cout << "argv [" << i << "] = " << argv[i] << "\n";
+
+        if (helpString == argv[i]) {
+            needHelp = true;
+        }
+    }
+
+    if (needHelp) {
+        getHelp();
+    }
+
+    return 0;
+}
