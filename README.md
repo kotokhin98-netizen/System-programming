@@ -168,18 +168,18 @@ int main(int argc, char* argv[]){
 #include <string>
 #include <clocale>
 
-void getHelp() {
-    std::cout << "Здесь будет помощь." << "\n";
+void getHelp() { 
+    std::cout << "Здесь будет помощь." << "\n"; 
 }
 
-int main(int argc, char* argv[]) {
-    setlocale(LC_ALL, "");
+int main(int argc, char* argv[]) { 
+    setlocale(LC_ALL, ""); 
 
     bool needHelp = false;
     std::string helpString = "--help";
 
     for (int i = 0; i < argc; i++) {
-        std::cout << "argv [" << i << "] = " << argv[i] << "\n";
+        std::cout << "argv[" << i << "] = " << argv[i] << "\n";
 
         if (helpString == argv[i]) {
             needHelp = true;
