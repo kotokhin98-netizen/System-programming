@@ -192,3 +192,40 @@ int main(int argc, char* argv[]) {
 
     return 0;
 }
+
+
+
+#include <unistd.h>
+#include <cstdlib>
+#include <string>
+extern char** environ;
+using namespace std ;
+int main(){
+    for(char**env=environ;
+        *env != nullptr;
+        env++){
+            cout<< *env << endl;
+        }
+    int a;
+    pid_t pid=getpid();
+    cout << "pid=" << pid << endl;
+    cout << "Ввести любое значение " << endl;
+    // cin >> a;
+        string poop ={
+        const char* shavarma =
+        getenv("MEOW")
+        if(shavarma != nullptr){
+            poop="shavarma";
+        }
+        else{
+            cerr << "MEOW not found" << endl;
+        }
+    }
+   
+    cout << "Hello worold" << endl;
+    
+    cerr << "Ошибка" << endl;
+
+    return 0;
+
+}
