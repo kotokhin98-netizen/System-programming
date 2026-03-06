@@ -1,9 +1,9 @@
 #include <iostream>
-#include <unistd.h>
-#include "stone.h"
-using namespace std;
+//#include <unistd.h>
 #define author "ABC"
 
-void get_help() {
+using namespace std;
+
+void get_help(){
     cout << "BYE " <<  author  << endl;
 }

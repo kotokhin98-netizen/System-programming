@@ -1,12 +1,11 @@
 #include <iostream>
-#include <unistd.h>
+//#include <unistd.h>
 #include <cstdlib>
 #include <string>
 #include "stone.h"
 
 using namespace std ;
 int main(){
-
     get_help();
 
    /* for(char**env=environ;
