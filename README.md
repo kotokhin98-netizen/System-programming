@@ -229,3 +229,67 @@ int main(){
     return 0;
 
 }
+
+
+
+
+1  g++ -Wall cpp.cpp stone.cpp -o app exe
+    2  g++ -Wall cpp.cpp stone.cpp -o app.exe
+    3  g++ -Wall c.cpp stone.cpp -o app.exe
+    4  ./app.exe
+    5  g++ -Wall c.cpp stone.cpp -o app.exe
+    6  ./app.exe
+    7  g++ -Wall c.cpp stone.cpp -o app.exe
+    8  ./app.exe
+    9  g++ -Wall c.cpp stone.cpp -o app.exe
+   10  ./app.exe
+   11  git add .
+   12  git commit -m "пара в пятницу"
+   13  git push
+   14  git pull --no-rebase
+   15  git add .
+   16  git commit -m "Chacha"
+   17  git pull
+   18  git push
+   19  g++ -APIC -e c.cpp -o stone.o
+   20  g++ -fPIC -c c.cpp -o stone.o
+   21  file stone.o
+   22  g++ -shared -o libstone.so stone.o
+   23  file libstone.so
+   24  g++ -o stone c.cpp -L. -lstone
+   25  g++ -o stone  -L. -lstone c.cpp
+   26  g++  c.cpp -L. -lstone -o dynam
+   27  file libstone.so
+   28  g++ -o stone c.cpp -L. -lstone
+   29  g++  c.cpp -L. -lstone -o dynam
+   30  g++ -fPIC -c c.cpp -o stone.o
+   31  g++ -shared -o libstone.so stone.o
+   32  g++ -o stone c.cpp -L. -lstone
+   33  g++  c.cpp -L. -lstone -o dynam
+   34  sudo -sH
+   35  grap LD
+   36  grep LD
+   37  env
+   38  env |grep LD
+   39  ldd app.exe
+   40  ls -la
+   41  ./gege 
+   42  g++  c.cpp -L. -lstone -o dynam
+   43  g++ c.cpp stone.cpp 
+   44  ./a.out 
+   45  g++ -fPIC -c c.cpp -o stone.o
+   46  g++ -shared ./stone.o -o libstone.so
+   47  g++  c.cpp -L. -lstone -o dynam
+   48  g++ c.cpp -L. -lstone -o dynam
+   49  ls -la
+   50  g++ c.cpp -L. -lstone -o dynam
+   51  g++ -fPIC -c stone.cpp -o stone.o
+   52  g++ -shared ./stone.o -o libstone.so
+   53  g++ c.cpp -L. -lstone -o dynam
+   54  ./dynam 
+   55  ldd ./dynam 
+   56  g++ -fPIC -c stone.cpp -o stone.o
+   57  g++ -shared ./stone.o -o libstone.so
+   58  ./dynam 
+   59  histori
+   60  history
