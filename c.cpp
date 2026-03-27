@@ -6,7 +6,7 @@
 
 using namespace std ;
 int main(){
-    get_help();
+    get_help111();
 
    /* for(char**env=environ;
         *env != nullptr;

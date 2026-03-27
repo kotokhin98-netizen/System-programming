@@ -4,6 +4,6 @@
 
 using namespace std;
 
-void get_help(){
-    cout << "BYE " <<  author  << endl;
+void get_help111(){
+    cout << "werwerwerBYE " <<  author  << endl;
 }

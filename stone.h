@@ -1,3 +1,3 @@
 #pragma once
 
-void get_help();
+void get_help111();
